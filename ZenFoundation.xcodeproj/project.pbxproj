@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		F7E720022433CF72004BAF12 /* ZenFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E720002433CF72004BAF12 /* ZenFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7E7203E2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
+		F7E7203F2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
+		F7E720402433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
+		F7E720412433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -17,6 +21,7 @@
 		F7E7201B2433D162004BAF12 /* ZenFoundation_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenFoundation_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E720282433D24C004BAF12 /* ZenFoundation_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenFoundation_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E720352433D277004BAF12 /* ZenFoundation_watchOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenFoundation_watchOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Template.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 		F7E71FFF2433CF72004BAF12 /* ZenFoundation */ = {
 			isa = PBXGroup;
 			children = (
+				F7E720422433D511004BAF12 /* SourceCode */,
 				F7E720082433CFB9004BAF12 /* SupportingFiles */,
 			);
 			path = ZenFoundation;
@@ -85,6 +91,30 @@
 				F7E720012433CF72004BAF12 /* Info.plist */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F7E720422433D511004BAF12 /* SourceCode */ = {
+			isa = PBXGroup;
+			children = (
+				F7E720432433D515004BAF12 /* Extensions */,
+			);
+			path = SourceCode;
+			sourceTree = "<group>";
+		};
+		F7E720432433D515004BAF12 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7E720442433D521004BAF12 /* DateFormatter */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7E720442433D521004BAF12 /* DateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */,
+			);
+			path = DateFormatter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,15 +235,19 @@
 				TargetAttributes = {
 					F7E71FFC2433CF72004BAF12 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					F7E7201A2433D162004BAF12 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					F7E720272433D24C004BAF12 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 					F7E720342433D277004BAF12 = {
 						CreatedOnToolsVersion = 11.4;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -274,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E7203E2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E7203F2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +324,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E720402433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E720412433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +462,7 @@
 		F7E720062433CF72004BAF12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -440,6 +479,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ZenFoundation-iOS";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,6 +488,7 @@
 		F7E720072433CF72004BAF12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -472,6 +513,7 @@
 		F7E720212433D162004BAF12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -492,6 +534,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -499,6 +542,7 @@
 		F7E720222433D162004BAF12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
@@ -526,6 +570,7 @@
 		F7E7202E2433D24C004BAF12 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -544,6 +589,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 9.0;
@@ -553,6 +599,7 @@
 		F7E7202F2433D24C004BAF12 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -581,6 +628,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
@@ -599,6 +647,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 2.0;
@@ -609,6 +658,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7CK9FQY54K;
