@@ -11,7 +11,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F7E71FFD2433CF72004BAF12 /* ZenFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7E71FFD2433CF72004BAF12 /* ZenFoundation_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenFoundation_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E720002433CF72004BAF12 /* ZenFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenFoundation.h; sourceTree = "<group>"; };
 		F7E720012433CF72004BAF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -38,7 +38,7 @@
 		F7E71FFE2433CF72004BAF12 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F7E71FFD2433CF72004BAF12 /* ZenFoundation.framework */,
+				F7E71FFD2433CF72004BAF12 /* ZenFoundation_iOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,9 +74,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		F7E71FFC2433CF72004BAF12 /* ZenFoundation */ = {
+		F7E71FFC2433CF72004BAF12 /* ZenFoundation-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F7E720052433CF72004BAF12 /* Build configuration list for PBXNativeTarget "ZenFoundation" */;
+			buildConfigurationList = F7E720052433CF72004BAF12 /* Build configuration list for PBXNativeTarget "ZenFoundation-iOS" */;
 			buildPhases = (
 				F7E71FF82433CF72004BAF12 /* Headers */,
 				F7E71FF92433CF72004BAF12 /* Sources */,
@@ -87,9 +87,9 @@
 			);
 			dependencies = (
 			);
-			name = ZenFoundation;
+			name = "ZenFoundation-iOS";
 			productName = ZenFoundation;
-			productReference = F7E71FFD2433CF72004BAF12 /* ZenFoundation.framework */;
+			productReference = F7E71FFD2433CF72004BAF12 /* ZenFoundation_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +119,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F7E71FFC2433CF72004BAF12 /* ZenFoundation */,
+				F7E71FFC2433CF72004BAF12 /* ZenFoundation-iOS */,
 			);
 		};
 /* End PBXProject section */
@@ -325,7 +325,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F7E720052433CF72004BAF12 /* Build configuration list for PBXNativeTarget "ZenFoundation" */ = {
+		F7E720052433CF72004BAF12 /* Build configuration list for PBXNativeTarget "ZenFoundation-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F7E720062433CF72004BAF12 /* Debug */,
