@@ -35,6 +35,10 @@
 		F7A45FA6244A6B7C0023F35A /* NSAttributedString+MathOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45FA4244A6B7C0023F35A /* NSAttributedString+MathOperators.swift */; };
 		F7A45FA7244A6B7C0023F35A /* NSAttributedString+MathOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45FA4244A6B7C0023F35A /* NSAttributedString+MathOperators.swift */; };
 		F7A45FA8244A6B7C0023F35A /* NSAttributedString+MathOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45FA4244A6B7C0023F35A /* NSAttributedString+MathOperators.swift */; };
+		F7D7AEFD244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7AEFC244A6D0000DF9212 /* UserDefaults+Subscriptions.swift */; };
+		F7D7AEFE244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7AEFC244A6D0000DF9212 /* UserDefaults+Subscriptions.swift */; };
+		F7D7AEFF244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7AEFC244A6D0000DF9212 /* UserDefaults+Subscriptions.swift */; };
+		F7D7AF00244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D7AEFC244A6D0000DF9212 /* UserDefaults+Subscriptions.swift */; };
 		F7E720022433CF72004BAF12 /* ZenFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E720002433CF72004BAF12 /* ZenFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7E7203E2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
 		F7E7203F2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
@@ -50,6 +54,7 @@
 		F7A45F9A244A6A8A0023F35A /* Scanner+Numbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scanner+Numbers.swift"; sourceTree = "<group>"; };
 		F7A45F9F244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scanner+HexadecimalNumbers.swift"; sourceTree = "<group>"; };
 		F7A45FA4244A6B7C0023F35A /* NSAttributedString+MathOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSAttributedString+MathOperators.swift"; sourceTree = "<group>"; };
+		F7D7AEFC244A6D0000DF9212 /* UserDefaults+Subscriptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Subscriptions.swift"; sourceTree = "<group>"; };
 		F7E71FFD2433CF72004BAF12 /* ZenFoundation_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenFoundation_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E720002433CF72004BAF12 /* ZenFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenFoundation.h; sourceTree = "<group>"; };
 		F7E720012433CF72004BAF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -97,6 +102,7 @@
 				F7E720442433D521004BAF12 /* DateFormatter */,
 				F7A45F89244A5BCE0023F35A /* Predicate */,
 				F7A45FA9244A6B820023F35A /* AttributedString */,
+				F7D7AF01244A6D1400DF9212 /* UserDefaults */,
 				F7A45F99244A69BE0023F35A /* Scanner */,
 			);
 			path = Foundation;
@@ -128,6 +134,14 @@
 				F7A45FA4244A6B7C0023F35A /* NSAttributedString+MathOperators.swift */,
 			);
 			path = AttributedString;
+			sourceTree = "<group>";
+		};
+		F7D7AF01244A6D1400DF9212 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				F7D7AEFC244A6D0000DF9212 /* UserDefaults+Subscriptions.swift */,
+			);
+			path = UserDefaults;
 			sourceTree = "<group>";
 		};
 		F7E71FF32433CF72004BAF12 = {
@@ -384,6 +398,7 @@
 			files = (
 				F7A45F85244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
 				F7A45F8B244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7D7AEFD244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F90244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9B244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA0244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
@@ -399,6 +414,7 @@
 			files = (
 				F7A45F86244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
 				F7A45F8C244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7D7AEFE244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F91244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9C244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA1244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
@@ -414,6 +430,7 @@
 			files = (
 				F7A45F87244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
 				F7A45F8D244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7D7AEFF244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F92244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9D244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA2244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
@@ -429,6 +446,7 @@
 			files = (
 				F7A45F88244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
 				F7A45F8E244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7D7AF00244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F93244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9E244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA3244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
