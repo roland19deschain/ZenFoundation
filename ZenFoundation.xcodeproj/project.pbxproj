@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7A45F85244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */; };
+		F7A45F86244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */; };
+		F7A45F87244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */; };
+		F7A45F88244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */; };
+		F7A45F8B244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */; };
+		F7A45F8C244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */; };
+		F7A45F8D244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */; };
+		F7A45F8E244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */; };
+		F7A45F90244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */; };
+		F7A45F91244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */; };
+		F7A45F92244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */; };
+		F7A45F93244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */; };
 		F7E720022433CF72004BAF12 /* ZenFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = F7E720002433CF72004BAF12 /* ZenFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F7E7203E2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
 		F7E7203F2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E7203D2433D4F8004BAF12 /* DateFormatter+Template.swift */; };
@@ -15,6 +27,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Convenience.swift"; sourceTree = "<group>"; };
+		F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+MathOperators.swift"; sourceTree = "<group>"; };
+		F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+LogicOperators.swift"; sourceTree = "<group>"; };
 		F7E71FFD2433CF72004BAF12 /* ZenFoundation_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZenFoundation_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E720002433CF72004BAF12 /* ZenFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZenFoundation.h; sourceTree = "<group>"; };
 		F7E720012433CF72004BAF12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +71,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7A45F7C244A5A9F0023F35A /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				F7E720442433D521004BAF12 /* DateFormatter */,
+				F7A45F89244A5BCE0023F35A /* Predicate */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		F7A45F89244A5BCE0023F35A /* Predicate */ = {
+			isa = PBXGroup;
+			children = (
+				F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */,
+				F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */,
+				F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */,
+			);
+			path = Predicate;
+			sourceTree = "<group>";
+		};
 		F7E71FF32433CF72004BAF12 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +138,7 @@
 		F7E720432433D515004BAF12 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F7E720442433D521004BAF12 /* DateFormatter */,
+				F7A45F7C244A5A9F0023F35A /* Foundation */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -308,6 +342,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A45F85244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F7A45F8B244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7A45F90244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7E7203E2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A45F86244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F7A45F8C244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7A45F91244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7E7203F2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +364,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A45F87244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F7A45F8D244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7A45F92244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7E720402433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -332,6 +375,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7A45F88244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F7A45F8E244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7A45F93244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7E720412433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
