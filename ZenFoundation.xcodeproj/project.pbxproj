@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7944AE024C5D345008D2B68 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */; };
+		F7944AE124C5D345008D2B68 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */; };
+		F7944AE224C5D345008D2B68 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */; };
+		F7944AE324C5D345008D2B68 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */; };
+		F7944AE624C5D355008D2B68 /* URL+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AE524C5D355008D2B68 /* URL+Directories.swift */; };
+		F7944AE724C5D355008D2B68 /* URL+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AE524C5D355008D2B68 /* URL+Directories.swift */; };
+		F7944AE824C5D355008D2B68 /* URL+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AE524C5D355008D2B68 /* URL+Directories.swift */; };
+		F7944AE924C5D355008D2B68 /* URL+Directories.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AE524C5D355008D2B68 /* URL+Directories.swift */; };
+		F7944AF024C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AEF24C5DE3D008D2B68 /* String+DirectoryPath.swift */; };
+		F7944AF124C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AEF24C5DE3D008D2B68 /* String+DirectoryPath.swift */; };
+		F7944AF224C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AEF24C5DE3D008D2B68 /* String+DirectoryPath.swift */; };
+		F7944AF324C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944AEF24C5DE3D008D2B68 /* String+DirectoryPath.swift */; };
+		F7944AF624C5E188008D2B68 /* OperationQueue+Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E6B42824A929AD00382CBF /* OperationQueue+Introspection.swift */; };
+		F7944AF724C5E188008D2B68 /* OperationQueue+Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E6B42824A929AD00382CBF /* OperationQueue+Introspection.swift */; };
+		F7944AF824C5E189008D2B68 /* OperationQueue+Introspection.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E6B42824A929AD00382CBF /* OperationQueue+Introspection.swift */; };
 		F7A45F85244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */; };
 		F7A45F86244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */; };
 		F7A45F87244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */; };
@@ -48,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryParameters.swift"; sourceTree = "<group>"; };
+		F7944AE524C5D355008D2B68 /* URL+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Directories.swift"; sourceTree = "<group>"; };
+		F7944AEF24C5DE3D008D2B68 /* String+DirectoryPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DirectoryPath.swift"; sourceTree = "<group>"; };
 		F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Convenience.swift"; sourceTree = "<group>"; };
 		F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+MathOperators.swift"; sourceTree = "<group>"; };
 		F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+LogicOperators.swift"; sourceTree = "<group>"; };
@@ -98,9 +116,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F7944AE424C5D349008D2B68 /* URL */ = {
+			isa = PBXGroup;
+			children = (
+				F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */,
+				F7944AE524C5D355008D2B68 /* URL+Directories.swift */,
+			);
+			path = URL;
+			sourceTree = "<group>";
+		};
+		F7944AF424C5DE45008D2B68 /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				F7944AF524C5DE4C008D2B68 /* String */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		F7944AF524C5DE4C008D2B68 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				F7944AEF24C5DE3D008D2B68 /* String+DirectoryPath.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
 		F7A45F7C244A5A9F0023F35A /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				F7944AE424C5D349008D2B68 /* URL */,
 				F7E720442433D521004BAF12 /* DateFormatter */,
 				F7A45F89244A5BCE0023F35A /* Predicate */,
 				F7A45FA9244A6B820023F35A /* AttributedString */,
@@ -203,6 +247,7 @@
 		F7E720432433D515004BAF12 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F7944AF424C5DE45008D2B68 /* Swift */,
 				F7A45F7C244A5A9F0023F35A /* Foundation */,
 			);
 			path = Extensions;
@@ -412,9 +457,12 @@
 				F7D7AEFD244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F90244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9B244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
+				F7944AE024C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7E6B42924A929AD00382CBF /* OperationQueue+Introspection.swift in Sources */,
+				F7944AE624C5D355008D2B68 /* URL+Directories.swift in Sources */,
 				F7A45FA0244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
 				F7A45F95244A69BA0023F35A /* Scanner+Strings.swift in Sources */,
+				F7944AF024C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */,
 				F7E7203E2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
 				F7A45FA5244A6B7C0023F35A /* NSAttributedString+MathOperators.swift in Sources */,
 			);
@@ -426,12 +474,16 @@
 			files = (
 				F7A45F86244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
 				F7A45F8C244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7944AE124C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7D7AEFE244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F91244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9C244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA1244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
+				F7944AF624C5E188008D2B68 /* OperationQueue+Introspection.swift in Sources */,
 				F7A45F96244A69BA0023F35A /* Scanner+Strings.swift in Sources */,
+				F7944AE724C5D355008D2B68 /* URL+Directories.swift in Sources */,
 				F7E7203F2433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
+				F7944AF124C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */,
 				F7A45FA6244A6B7C0023F35A /* NSAttributedString+MathOperators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,12 +494,16 @@
 			files = (
 				F7A45F87244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
 				F7A45F8D244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7944AE224C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7D7AEFF244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F92244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9D244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA2244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
+				F7944AF724C5E188008D2B68 /* OperationQueue+Introspection.swift in Sources */,
 				F7A45F97244A69BA0023F35A /* Scanner+Strings.swift in Sources */,
+				F7944AE824C5D355008D2B68 /* URL+Directories.swift in Sources */,
 				F7E720402433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
+				F7944AF224C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */,
 				F7A45FA7244A6B7C0023F35A /* NSAttributedString+MathOperators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -458,12 +514,16 @@
 			files = (
 				F7A45F88244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
 				F7A45F8E244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
+				F7944AE324C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7D7AF00244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F93244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9E244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA3244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
+				F7944AF824C5E189008D2B68 /* OperationQueue+Introspection.swift in Sources */,
 				F7A45F98244A69BA0023F35A /* Scanner+Strings.swift in Sources */,
+				F7944AE924C5D355008D2B68 /* URL+Directories.swift in Sources */,
 				F7E720412433D4F8004BAF12 /* DateFormatter+Template.swift in Sources */,
+				F7944AF324C5DE3D008D2B68 /* String+DirectoryPath.swift in Sources */,
 				F7A45FA8244A6B7C0023F35A /* NSAttributedString+MathOperators.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
