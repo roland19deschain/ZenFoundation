@@ -29,12 +29,12 @@ public extension NSPredicate {
 	
 	/**
 	Returns a predicate that evaluates whether the value in specified keypath equal to the value specified as second argument.
-	- parameter keyPath: The keypath to field.
 	- parameter value: The value to compare.
+	- parameter keyPath: The keypath to field.
 	*/
-	static func equal<Value: CVarArg>(
-		keyPath: String,
-		value: Value
+	static func value(
+		_ value: CVarArg,
+		equalTo keyPath: String
 	) -> NSPredicate {
 		if type(of: value) == String.self {
 			return NSPredicate(format: "%K == %@", keyPath, value)
@@ -45,20 +45,20 @@ public extension NSPredicate {
 	
 	/**
 	Returns a predicate that evaluates whether the collection contains the value in specified keypath.
+	- parameter values: The collection where to search.
 	- parameter keyPath: The keypath to field.
-	- parameter value: The collection where to search.
 	*/
-	static func contain<Values: Collection>(
-		keyPath: String,
-		values: Values
-	) -> NSPredicate where Values: CVarArg, Values.Element: CVarArg {
+	static func values(
+		_ values: [CVarArg],
+		contain keyPath: String
+	) -> NSPredicate {
 		guard values.count == 1,
 			let first = values.first else {
 				return NSPredicate(format: "%K IN %@", keyPath, values)
 		}
-		return equal(
-			keyPath: keyPath,
-			value: first
+		return value(
+			first,
+			equalTo: keyPath
 		)
 	}
 	
