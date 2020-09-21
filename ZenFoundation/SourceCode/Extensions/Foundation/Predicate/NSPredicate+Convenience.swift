@@ -8,7 +8,7 @@ public extension NSPredicate {
 	}
 	
 	/// Returns a predicate that always evaluates _true_.
-	var alwaysTrue: NSPredicate {
+	static var alwaysTrue: NSPredicate {
 		NSPredicate(value: true)
 	}
 	
