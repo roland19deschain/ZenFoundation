@@ -7,6 +7,11 @@ public extension NSPredicate {
 		NSCompoundPredicate(notPredicateWithSubpredicate: self)
 	}
 	
+	/// Returns a predicate that always evaluates _true_.
+	var alwaysTrue: NSPredicate {
+		NSPredicate(value: true)
+	}
+	
 	/// Returns a new predicate formed by AND-ing the argument to the predicate.
 	func and(_ predicate: NSPredicate) -> NSPredicate {
 		NSCompoundPredicate(andPredicateWithSubpredicates: [
@@ -29,12 +34,12 @@ public extension NSPredicate {
 	
 	/**
 	Returns a predicate that evaluates whether the value in specified keypath equal to the value specified as second argument.
-	- parameter value: The value to compare.
 	- parameter keyPath: The keypath to field.
+	- parameter value: The value to compare.
 	*/
-	static func value(
-		_ value: CVarArg,
-		equalTo keyPath: String
+	static func keyPath(
+		_ keyPath: String,
+		equalTo value: CVarArg
 	) -> NSPredicate {
 		if type(of: value) == String.self {
 			return NSPredicate(format: "%K == %@", keyPath, value)
@@ -50,38 +55,38 @@ public extension NSPredicate {
 	*/
 	static func values(
 		_ values: [CVarArg],
-		contain keyPath: String
+		contains keyPath: String
 	) -> NSPredicate {
 		guard values.count == 1,
-			let first = values.first else {
-				return NSPredicate(format: "%K IN %@", keyPath, values)
+			  let first = values.first else {
+			return NSPredicate(format: "%K IN %@", keyPath, values)
 		}
-		return value(
-			first,
-			equalTo: keyPath
+		return self.keyPath(
+			keyPath,
+			equalTo: first
 		)
 	}
 	
 	/**
 	Returns a predicate that evaluates whether the relation contains more entities than specified count.
-	- parameter relationKeyPath: The keypath to _to-many_ relationship.
+	- parameter keyPath: The keypath to _to-many_ relationship.
 	- parameter count: The number to compare with entities count.
 	*/
-	static func contain(
-		relationKeyPath: String,
+	static func relation(
+		_ keyPath: String,
 		moreThan count: Int
 	) -> NSPredicate {
-		NSPredicate(format: "%K.@count > \(count)", relationKeyPath)
+		NSPredicate(format: "%K.@count > \(count)", keyPath)
 	}
 	
 	/**
-	Returns a predicate that evaluates whether the value in specified keypath is within specified range.
+	Returns a predicate that evaluates whether the value inmore than specified keypath is within specified range.
 	- parameter keyPath: The keypath to field.
 	- parameter range: The allowable range.
 	*/
-	static func within(
-		keyPath: String,
-		range: CountableClosedRange<Int>
+	static func keyPath(
+		_ keyPath: String,
+		within range: CountableClosedRange<Int>
 	) -> NSPredicate {
 		NSPredicate(
 			format: "%K >= %@ && %K <= %@",
@@ -95,9 +100,9 @@ public extension NSPredicate {
 	- parameter keyPath: The keypath to field.
 	- parameter range: The allowable range.
 	*/
-	static func within(
-		keyPath: String,
-		range: CountableRange<Int>
+	static func keyPath(
+		_ keyPath: String,
+		within range: CountableRange<Int>
 	) -> NSPredicate {
 		NSPredicate(
 			format: "%K >= %@ && %K < %@",
