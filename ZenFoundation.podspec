@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ZenFoundation'
-  s.version          = '1.2.2'
+  s.version          = '1.2.3'
   s.swift_version    = '5.0'
   s.summary          = 'ZenFoundation is a collection of extensions and functions for Foundation framework.'
   s.description      = <<-DESC
