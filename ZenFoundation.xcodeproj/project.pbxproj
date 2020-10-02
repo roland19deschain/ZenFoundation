@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F734F3402527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F33F2527D4D100C9045B /* NSPredicate+Relationships.swift */; };
+		F734F3412527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F33F2527D4D100C9045B /* NSPredicate+Relationships.swift */; };
+		F734F3422527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F33F2527D4D100C9045B /* NSPredicate+Relationships.swift */; };
+		F734F3432527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F33F2527D4D100C9045B /* NSPredicate+Relationships.swift */; };
+		F734F3512527D67800C9045B /* NSPredicate+Matching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F3502527D67800C9045B /* NSPredicate+Matching.swift */; };
+		F734F3522527D67800C9045B /* NSPredicate+Matching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F3502527D67800C9045B /* NSPredicate+Matching.swift */; };
+		F734F3532527D67800C9045B /* NSPredicate+Matching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F3502527D67800C9045B /* NSPredicate+Matching.swift */; };
+		F734F3542527D67800C9045B /* NSPredicate+Matching.swift in Sources */ = {isa = PBXBuildFile; fileRef = F734F3502527D67800C9045B /* NSPredicate+Matching.swift */; };
 		F7944AE024C5D345008D2B68 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */; };
 		F7944AE124C5D345008D2B68 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */; };
 		F7944AE224C5D345008D2B68 /* URL+QueryParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */; };
@@ -63,6 +71,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F734F33F2527D4D100C9045B /* NSPredicate+Relationships.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Relationships.swift"; sourceTree = "<group>"; };
+		F734F3502527D67800C9045B /* NSPredicate+Matching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPredicate+Matching.swift"; sourceTree = "<group>"; };
 		F7944ADF24C5D345008D2B68 /* URL+QueryParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+QueryParameters.swift"; sourceTree = "<group>"; };
 		F7944AE524C5D355008D2B68 /* URL+Directories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+Directories.swift"; sourceTree = "<group>"; };
 		F7944AEF24C5DE3D008D2B68 /* String+DirectoryPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DirectoryPath.swift"; sourceTree = "<group>"; };
@@ -159,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				F7A45F84244A5BCB0023F35A /* NSPredicate+Convenience.swift */,
+				F734F3502527D67800C9045B /* NSPredicate+Matching.swift */,
+				F734F33F2527D4D100C9045B /* NSPredicate+Relationships.swift */,
 				F7A45F8A244A61EE0023F35A /* NSPredicate+MathOperators.swift */,
 				F7A45F8F244A66BA0023F35A /* NSPredicate+LogicOperators.swift */,
 			);
@@ -453,9 +465,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A45F85244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F734F3512527D67800C9045B /* NSPredicate+Matching.swift in Sources */,
 				F7A45F8B244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
 				F7D7AEFD244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
 				F7A45F90244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
+				F734F3402527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */,
 				F7A45F9B244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7944AE024C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7E6B42924A929AD00382CBF /* OperationQueue+Introspection.swift in Sources */,
@@ -473,9 +487,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A45F86244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F734F3522527D67800C9045B /* NSPredicate+Matching.swift in Sources */,
 				F7A45F8C244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
 				F7944AE124C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7D7AEFE244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
+				F734F3412527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */,
 				F7A45F91244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9C244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA1244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
@@ -493,9 +509,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A45F87244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F734F3532527D67800C9045B /* NSPredicate+Matching.swift in Sources */,
 				F7A45F8D244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
 				F7944AE224C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7D7AEFF244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
+				F734F3422527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */,
 				F7A45F92244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9D244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA2244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
@@ -513,9 +531,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7A45F88244A5BCB0023F35A /* NSPredicate+Convenience.swift in Sources */,
+				F734F3542527D67800C9045B /* NSPredicate+Matching.swift in Sources */,
 				F7A45F8E244A61EE0023F35A /* NSPredicate+MathOperators.swift in Sources */,
 				F7944AE324C5D345008D2B68 /* URL+QueryParameters.swift in Sources */,
 				F7D7AF00244A6D0000DF9212 /* UserDefaults+Subscriptions.swift in Sources */,
+				F734F3432527D4D100C9045B /* NSPredicate+Relationships.swift in Sources */,
 				F7A45F93244A66BA0023F35A /* NSPredicate+LogicOperators.swift in Sources */,
 				F7A45F9E244A6A8A0023F35A /* Scanner+Numbers.swift in Sources */,
 				F7A45FA3244A6B0D0023F35A /* Scanner+HexadecimalNumbers.swift in Sources */,
