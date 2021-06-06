@@ -3,6 +3,14 @@ import Foundation
 public extension NSPredicate {
 	
 	/**
+	Returns a predicate that evaluates whether the relationship contains more than 0 entities.
+	- parameter keyPath: The keypath to _to-many_ relationship.
+	*/
+	static func relationshipNotEmpty(_ keyPath: String) -> NSPredicate {
+		relationship(keyPath, countMoreThan: 0)
+	}
+	
+	/**
 	Returns a predicate that evaluates whether the relationship contains more entities than specified count.
 	- parameter keyPath: The keypath to _to-many_ relationship.
 	- parameter count: The number to compare with entities count.
