@@ -7,8 +7,8 @@ public extension URL {
 		guard var components = URLComponents(
 			url: self,
 			resolvingAgainstBaseURL: false
-			) else {
-				return nil
+		) else {
+			return nil
 		}
 		
 		var queryItems = queryParameters.map {
@@ -32,8 +32,8 @@ public extension URL {
 		guard var components = URLComponents(
 			url: self,
 			resolvingAgainstBaseURL: false
-			) else {
-				return
+		) else {
+			return
 		}
 		var queryItems = queryParameters.map {
 			URLQueryItem(

@@ -12,7 +12,7 @@ public extension Scanner {
 		return scanCharacters(
 			from: set,
 			into: &value
-			) ? value as String? : nil
+		) ? value as String? : nil
 	}
 	
 	/// Returns a string, scanned until a character from a given character set are encountered,
@@ -25,7 +25,7 @@ public extension Scanner {
 		return scanUpToCharacters(
 			from: set,
 			into: &value
-			) ? value as String? : nil
+		) ? value as String? : nil
 	}
 	
 	/// Returns the given string if scanned, or `nil` if not found.
@@ -37,7 +37,7 @@ public extension Scanner {
 		return scanString(
 			string,
 			into: &value
-			) ? value as String? : nil
+		) ? value as String? : nil
 	}
 	
 	/// Returns a string, scanned until the given string is found,
@@ -48,7 +48,7 @@ public extension Scanner {
 		return scanUpTo(
 			string,
 			into: &value
-			) ? value as String? : nil
+		) ? value as String? : nil
 	}
 	
 }

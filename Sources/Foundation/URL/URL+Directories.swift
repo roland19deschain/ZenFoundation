@@ -6,8 +6,8 @@ public extension URL {
 	static var documentDirectoryURL: URL {
 		FileManager.default.urls(
 			for: .documentDirectory,
-			in: .userDomainMask
-			)[0]
+			   in: .userDomainMask
+		)[0]
 	}
 	
 }
