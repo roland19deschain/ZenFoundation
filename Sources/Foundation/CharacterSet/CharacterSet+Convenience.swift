@@ -14,7 +14,7 @@ public extension CharacterSet {
 	/// Returns code points representing the given set.
 	var codePoints: [Int] {
 		var result: [Int] = []
-		var plane = 0
+		var plane: Int = 0
 		for (i, w) in bitmapRepresentation.enumerated() {
 			let k = i % 0x2001
 			if k == 0x2000 {
