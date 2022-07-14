@@ -16,13 +16,13 @@ public extension CharacterSet {
 		var result: [Int] = []
 		var plane: Int = 0
 		for (i, w) in bitmapRepresentation.enumerated() {
-			let k = i % 0x2001
+			let k: Int = i % 0x2001
 			if k == 0x2000 {
 				// plane index byte
 				plane = Int(w) << 13
 				continue
 			}
-			let base = (plane + k) << 3
+			let base: Int = (plane + k) << 3
 			for j in 0 ..< 8 where w & 1 << j != 0 {
 				result.append(base + j)
 			}
