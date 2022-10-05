@@ -3,7 +3,29 @@ import Foundation
 public extension NSPredicate {
 	
 	/**
-	 Returns a predicate that evaluates whether the value in specified keypath equal to the value specified as second argument.
+	 Returns a predicate that evaluates whether the string is not empty.
+	 - parameter keyPath: The keypath to field of type `String`.
+	 */
+	func stringNotEmpty(_ keyPath: String) -> NSPredicate {
+		NSPredicate(format: "%K != '' AND %K != nil", keyPath, keyPath)
+	}
+	
+	/**
+	 Returns a predicate that evaluates whether the string length is equal to given argument.
+	 Pay attention that `%K.length` syntax did not work with a string with a leading '/' character.
+	 - parameter keyPath: The keypath to field of type `String`.
+	 - parameter value: The `length` value to compare.
+	 */
+	func stringLength(
+		_ keyPath: String,
+		equalTo value: CVarArg
+	) -> NSPredicate {
+		NSPredicate(format: "%K.length == %@", keyPath, value)
+	}
+	
+	/**
+	 Returns a predicate that evaluates whether the value in specified keypath
+	 equal to the value specified as second argument.
 	 - parameter keyPath: The keypath to field.
 	 - parameter value: The value to compare.
 	 */
