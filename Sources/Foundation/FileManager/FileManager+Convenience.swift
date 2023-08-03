@@ -1,7 +1,7 @@
 import Foundation
 
 public extension FileManager {
-
+	
 	/// Returns device remaining free space (in bytes).
 	func deviceRemainingFreeSpace(directory: SearchPathDirectory) -> Int64? {
 		guard
@@ -17,7 +17,7 @@ public extension FileManager {
 		}
 		return freeSize.int64Value
 	}
-
+	
 	/// Returns a string containing the formatted value of device remaining free space (in bytes).
 	func deviceRemainingFreeSpace(directory: SearchPathDirectory) -> String? {
 		guard
@@ -33,5 +33,24 @@ public extension FileManager {
 		}
 		return ByteCountFormatter().string(fromByteCount: freeSize.int64Value)
 	}
-
+	
+	/// Creates a directory at the specified URL, if it already exists does nothing.
+	func createDirectoryIfNeeeded(_ url: URL) throws {
+		var isDirectory: ObjCBool = true
+		guard !fileExists(
+			atPath: url.path,
+			isDirectory: &isDirectory
+		) else {
+			return
+		}
+		do {
+			try createDirectory(
+				at: url,
+				withIntermediateDirectories: true
+			)
+		} catch {
+			throw error
+		}
+	}
+	
 }
