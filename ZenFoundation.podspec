@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
   spec.name             = 'ZenFoundation'
-  spec.version          = '2.0.4'
-  spec.swift_version    = '5.0'
+  spec.version          = '2.0.5'
+  spec.swift_version    = '5.9'
   spec.summary          = 'ZenFoundation is a collection of extensions and functions for Foundation framework.'
   spec.description      = <<-DESC
 ZenFoundation is a collection of convenient and concise extensions and functions for Foundation framework..
