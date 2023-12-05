@@ -4,15 +4,15 @@ public extension String {
 	
 	/// Returns a new string in which 'Document ' directory path are added as a prefix.
 	var includingDocumentDirectoryPath: String {
-		URL.documentDirectoryURL
-			.appendingPathComponent(self)
-			.absoluteString
+		URL.documentDirectory.appendingPathComponent(
+			self
+		).absoluteString
 	}
 	
 	/// Returns a new string in which 'Document ' directory path are replaced by empty string.
 	var excludingDocumentDirectoryPath: String {
 		replacingOccurrences(
-			of: URL.documentDirectoryURL.absoluteString,
+			of: URL.documentDirectory.absoluteString,
 			with: ""
 		)
 	}
