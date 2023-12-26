@@ -10,20 +10,16 @@ public extension URL {
 		) else {
 			return nil
 		}
-		
 		var queryItems = queryParameters.map {
 			URLQueryItem(
 				name: $0,
 				value: $1
 			)
 		}
-		
 		if let existingQueryItems = components.queryItems {
 			queryItems.append(contentsOf: existingQueryItems)
 		}
-		
 		components.queryItems = queryItems
-		
 		return components.url
 	}
 	
@@ -41,13 +37,10 @@ public extension URL {
 				value: $1
 			)
 		}
-		
 		if let existingQueryItems = components.queryItems {
 			queryItems.append(contentsOf: existingQueryItems)
 		}
-		
 		components.queryItems = queryItems
-		
 		if let url = components.url {
 			self = url
 		}

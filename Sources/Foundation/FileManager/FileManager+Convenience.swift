@@ -2,7 +2,7 @@ import Foundation
 
 public extension FileManager {
 	
-	/// Returns device remaining free space (in bytes).
+	/// Returns device remaining disk free space (in bytes).
 	func deviceRemainingFreeSpace(directory: SearchPathDirectory) -> Int64? {
 		guard
 			let documentDirectory = NSSearchPathForDirectoriesInDomains(
@@ -18,7 +18,7 @@ public extension FileManager {
 		return freeSize.int64Value
 	}
 	
-	/// Returns a string containing the formatted value of device remaining free space (in bytes).
+	/// Returns a string containing the formatted value of device remaining disk free space (in bytes).
 	func deviceRemainingFreeSpace(directory: SearchPathDirectory) -> String? {
 		guard
 			let documentDirectory = NSSearchPathForDirectoriesInDomains(

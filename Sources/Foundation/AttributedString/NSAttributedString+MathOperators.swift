@@ -5,9 +5,7 @@ public func += (lhs: inout NSAttributedString, rhs: NSAttributedString) {
 	let string = NSMutableAttributedString(
 		attributedString: lhs
 	)
-	
 	string.append(rhs)
-	
 	lhs = string
 }
 
@@ -16,9 +14,7 @@ public func + (lhs: NSAttributedString, rhs: NSAttributedString) -> NSAttributed
 	let string = NSMutableAttributedString(
 		attributedString: lhs
 	)
-	
 	string.append(rhs)
-	
 	return NSAttributedString(attributedString: string)
 }
 
