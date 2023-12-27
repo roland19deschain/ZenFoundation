@@ -2,8 +2,8 @@ import Foundation
 
 public extension URL {
 	
-	/// Returns total allocated size of a the directory including its subfolders or not (in bytes).
-	func directoryTotalAllocatedSize(
+	/// Returns occupied disk size (in bytes) of a directory including its subfolders or not.
+	func directoryOccupiedDiskSize(
 		includingSubfolders: Bool = false
 	) throws -> Int {
 		guard try isDirectory else {
@@ -36,11 +36,11 @@ public extension URL {
 		}
 	}
 	
-	/// Returns string witch contains the directory total size on disk,  including its subfolders or not.
-	func directoryTotalAllocatedSize(
+	/// Returns string witch contains the directory occupied disk size,  including its subfolders or not.
+	func directoryOccupiedDiskSize(
 		includingSubfolders: Bool = false
 	) throws -> String {
-		let size: Int = try directoryTotalAllocatedSize(
+		let size: Int = try directoryOccupiedDiskSize(
 			includingSubfolders: includingSubfolders
 		)
 		let byteCountFormatter = ByteCountFormatter()
