@@ -2,6 +2,30 @@ import Foundation
 
 public extension URL {
 	
+	/// Returs available volume capacity in bytes.
+	var availableDiskSpace: Int {
+		get throws {
+			guard let value = try resourceValues(forKeys: [
+				.volumeAvailableCapacityKey
+			]).volumeAvailableCapacity else {
+				throw "resource value for key `volumeAvailableCapacityKey` not found"
+			}
+			return value
+		}
+	}
+	
+	/// Returs total volume capacity in bytes.
+	var totalDiskSpace: Int {
+		get throws {
+			guard let value = try resourceValues(forKeys: [
+				.volumeTotalCapacityKey
+			]).volumeTotalCapacity else {
+				throw "resource value for key `volumeTotalCapacityKey` not found"
+			}
+			return value
+		}
+	}
+	
 	/// Returns occupied disk size (in bytes) of a directory including its subfolders or not.
 	func directoryOccupiedDiskSize(
 		includingSubfolders: Bool = false

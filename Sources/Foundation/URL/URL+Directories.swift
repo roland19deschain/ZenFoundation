@@ -26,4 +26,9 @@ public extension URL {
 		)
 	}
 	
+	/// Returns the url to either the user’s or application’s home directory.
+	static var homeDirectory: URL {
+		URL(fileURLWithPath: NSHomeDirectory())
+	}
+	
 }
