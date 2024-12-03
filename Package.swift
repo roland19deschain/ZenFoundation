@@ -1,14 +1,14 @@
-// swift-tools-version:5.9
+// swift-tools-version: 5.10
 
 import PackageDescription
 
 let package = Package(
 	name: "ZenFoundation",
 	platforms: [
-		.iOS(.v12),
-		.tvOS(.v12),
-		.macOS(.v10_10),
-		.watchOS(.v2)
+		.iOS(.v14),
+		.tvOS(.v14),
+		.macOS(.v10_15),
+		.watchOS(.v6)
 	],
 	products: [
 		.library(
