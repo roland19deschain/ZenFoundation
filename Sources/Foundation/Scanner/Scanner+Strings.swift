@@ -8,7 +8,6 @@ public extension Scanner {
 		from set: CharacterSet
 	) -> String? {
 		var value: NSString? = ""
-		
 		return scanCharacters(
 			from: set,
 			into: &value
@@ -21,7 +20,6 @@ public extension Scanner {
 		from set: CharacterSet
 	) -> String? {
 		var value: NSString? = ""
-		
 		return scanUpToCharacters(
 			from: set,
 			into: &value
@@ -33,7 +31,6 @@ public extension Scanner {
 		string: String
 	) -> String? {
 		var value: NSString? = ""
-		
 		return scanString(
 			string,
 			into: &value
@@ -44,7 +41,6 @@ public extension Scanner {
 	/// or the remainder of the scanner's string. Returns `nil` if the scanner is already `atEnd`.
 	func scanUp(to string: String) -> String? {
 		var value: NSString? = ""
-		
 		return scanUpTo(
 			string,
 			into: &value
