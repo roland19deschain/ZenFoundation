@@ -13,7 +13,7 @@ public extension URL {
 	var fileSize: UInt64 {
 		get throws {
 			guard let size = try attributes[.size] as? UInt64 else {
-				throw "MappingFailure"
+				throw "MappingFailure->URL.size"
 			}
 			return size
 		}
@@ -31,20 +31,20 @@ public extension URL {
 	}
 	
 	/// Returns the file's creation date.
-	var creationDate: Date? {
+	var creationDate: Date {
 		get throws {
 			guard let date = try attributes[.creationDate] as? Date else {
-				throw "MappingFailure"
+				throw "MappingFailure->URL.creationDate"
 			}
 			return date
 		}
 	}
 	
 	/// Returns the file’s last modified date.
-	var modificationDate: Date? {
+	var modificationDate: Date {
 		get throws {
 			guard let date = try attributes[.modificationDate] as? Date else {
-				throw "MappingFailure"
+				throw "MappingFailure->URL.modificationDate"
 			}
 			return date
 		}
