@@ -28,7 +28,10 @@ public extension Decimal {
 	}
 
 	/// Returns the value rounded to `scale` fractional digits using the given rounding mode.
-	func rounded(_ scale: Int = 0, mode: RoundingMode = .plain) -> Decimal {
+	func rounded(
+		_ scale: Int = 0,
+		mode: RoundingMode = .plain
+	) -> Decimal {
 		var result = Decimal()
 		var value = self
 		NSDecimalRound(&result, &value, scale, mode)
