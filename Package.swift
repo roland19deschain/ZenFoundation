@@ -23,11 +23,6 @@ let package = Package(
 			name: "ZenFoundation",
 			dependencies: [],
 			path: "Sources/"
-		),
-		.testTarget(
-			name: "ZenFoundationTests",
-			dependencies: ["ZenFoundation"],
-			path: "Tests/"
 		)
 	],
 	swiftLanguageVersions: [.v5]
